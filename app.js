@@ -41,10 +41,11 @@ const newAge = people.map((person) => {
 })
 console.log(newAge);
 
-//grab the name and show in Div on index.html (innerHTML)
+//grab the name to show in Div on index.html (innerHTML)
 const names = people.map((item) => `<h3>${item.name}</h3>`);
 
 //get the id of the div.
 const result =  document.querySelector('#result');
 
+//Assign the data into Div ID
 result.innerHTML = names.join('');
