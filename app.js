@@ -31,6 +31,10 @@ const people = [
 const ages = people.map((person) => person.age);
 console.log(ages);
 
+const getDiv = document.querySelector('#ages');
+
+getDiv.innerHTML = ages;
+
 //grab all name + make it uppercase & grab all ages and multiply by 2
 
 const newAge = people.map((person) => {
@@ -42,7 +46,7 @@ const newAge = people.map((person) => {
 console.log(newAge);
 
 //grab the name to show in Div on index.html (innerHTML)
-const names = people.map((item) => `<h3>${item.name}</h3>`);
+const names = people.map((item) => `<h3>Name: ${item.name}</h3>`);
 
 //get the id of the div.
 const result =  document.querySelector('#result');
